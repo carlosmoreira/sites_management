@@ -3,20 +3,42 @@
 require_once './login.php';
 require_once './sanitization.php';
 
-if(isset($_POST['id'])) $id = sanitizeString($_POST['id']);
-if(isset($_POST['name'])) $name = sanitizeString($_POST['name']);
-if(isset($_POST['description'])) $description = sanitizeString($_POST['description']);
-if(isset($_POST['cms'])) $cms = sanitizeString($_POST['cms']);
+if(isset($_POST['updateSite'])) {
 
-if($id && $name && $description && $cms) {
+    if (isset($_POST['id'])) $id = sanitizeString($_POST['id']);
+    if (isset($_POST['name'])) $name = sanitizeString($_POST['name']);
+    if (isset($_POST['description'])) $description = sanitizeString($_POST['description']);
+    if (isset($_POST['cms'])) $cms = sanitizeString($_POST['cms']);
 
-    $query = "UPDATE sites
+    if ($id && $name && $description && $cms) {
+
+        $query = "UPDATE sites
               SET name='$name', description='$description', cms='$cms'
               WHERE id='$id'";
+
+        if (!$result = $db->query($query)) {
+            die('There was an error running the query [' . $db->error . ']');
+        }
+
+        $db->close();
+    }
+}
+
+
+
+if(isset($_POST['updateNotes'])) {
+
+    if(isset($_POST['id'])) $id = sanitizeString($_POST['id']);
+    if(isset($_POST['notes'])) $notes = sanitizeString($_POST['notes']);
+
+    $query = "UPDATE sites
+          SET notes='$notes'
+          WHERE id='$id'";
 
     if (!$result = $db->query($query)) {
         die('There was an error running the query [' . $db->error . ']');
     }
+
 
     $db->close();
 }

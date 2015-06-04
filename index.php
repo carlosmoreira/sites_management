@@ -43,12 +43,14 @@ while($row = $result->fetch_assoc()){
                                         <span class="dev_url"><span class="bold">Dev URL :</span> </span>
                                     </div>
                                     <div class="col-lg-8 col-md-8">
-                                        <div class="form-group">
-                                          <label for="textArea" control-label">Notes</label>
+                                        <div class="form-group site_notes">
+                                          <label class="bold" for="textArea" control-label">Notes</label>
                                           <div>
-                                            <textarea class="form-control" rows="3" id="site_notes">' . $row['notes'] . '</textarea>
+                                            <textarea class="form-control" rows="3">' . $row['notes'] . '</textarea>
                                           </div>
-                                          <button class="btn btn-primary btn-sm update_notes" type="button">Update</button>
+                                          <div class="pull-left">
+                                            <button class="btn btn-primary btn-sm update_notes" type="button">Update</button>
+                                          </div>
                                         </div>
                                     </div>
                                 </div>

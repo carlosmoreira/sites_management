@@ -122,7 +122,9 @@ body {
     padding-right: 30px;
     padding-left: 30px;
 }
-
+.notes_success {
+    margin-left: 10px;
+}
 .outer-table {
 
     padding: 15px;
@@ -211,10 +213,6 @@ body {
 .sites_table .additional_info td {
 
     text-align: center;
-}
-.success {
-
-    margin-left: 5px;
 }
 .selected {
 

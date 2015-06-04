@@ -125,42 +125,49 @@ $('#edit_site_modal').on('click', '.edit_modal_save', function() {
 
     //console.log(id + ' ' + siteName + ' ' + description + ' ' + cms);
 
-    $('.edit_site_form').trigger('submit', [id, siteName, description, cms]);
+    $('.edit_site_form').trigger('submit', [id, siteName, description, cms, "Update Site"]);
 });
 
-$('.edit_site_form').on('submit', function(e, id, newSiteName, newDescription, newCMS) {
+$('.edit_site_form').on('submit', function(e, id, newSiteName, newDescription, newCMS, data) {
 
     e.preventDefault();
 
-    var dataString = 'id='+id+'&name='+newSiteName+'&description='+newDescription+'&cms='+newCMS;
+    if(data === "Update Site") {
 
-    request = $.ajax({
-        type: "POST",
-        url: "./php/update_site.php",
-        data: dataString
-    });
+       var dataString = 'updateSite=yes&id=' + id + '&name=' + newSiteName + '&description=' + newDescription + '&cms=' + newCMS;
 
-    request.done(function () {
+       request = $.ajax({
+           type: "POST",
+           url: "./php/update_site.php",
+           data: dataString
+       });
 
-        //$('#edit_site_modal .modal-body').prepend('<p class=" edit_success"><span class="text-success">Changed Successfully</span></p>');
+       request.done(function () {
 
-        var $row = $('.sites_table tbody').find('input[name="id"][value="'+id+'"]').closest('tr');
+           //$('#edit_site_modal .modal-body').prepend('<p class=" edit_success"><span class="text-success">Changed Successfully</span></p>');
 
-        $row.find('.site_name').text(newSiteName);
-        $row.find('.description').text(newDescription);
-        $row.find('.cms').text(cms_list[newCMS]);
-        $row.find('input[name="cmsId"]').val(newCMS);
+           var $row = $('.sites_table tbody').find('input[name="id"][value="' + id + '"]').closest('tr');
 
-        $('#edit_site_modal').modal('hide');
+           $row.find('.site_name').text(newSiteName);
+           $row.find('.description').text(newDescription);
+           $row.find('.cms').text(cms_list[newCMS]);
+           $row.find('input[name="cmsId"]').val(newCMS);
 
-    });
+           $('#edit_site_modal').modal('hide');
 
-    request.fail(function (jqXHR, textStatus, errorThrown) {
+       });
 
-        alert("it failed!");
-    });
+       request.fail(function (jqXHR, textStatus, errorThrown) {
+
+           alert("it failed!");
+       });
+   }
 });
 
+
+
+
+//Handle table row selections
 $('.sites_table').on('click', '.primary_info', function() {
 
     var $row = $(this).next('.additional_info_row');
@@ -190,20 +197,43 @@ $('.sites_table').on('click', '.primary_info', function() {
 });
 
 
+
+
+//Handle updating notes
 $('.sites_table tbody').on('click', '.update_notes', function() {
 
     var id = rowClicked;
-    var notes = $(this).prev('div').find('textarea').text();
+    var notes = $(this).parent('div').prev('div').find('textarea').val();
+    console.log(notes);
 
-    //console.log(id + ' ' + notes);
+    $('.edit_item').trigger('submit', [id, notes, "Update Notes"]);
 
-    var dataString = 'id='+id+'&name='+newSiteName+'&description='+newDescription+'&cms='+newCMS;
+});
 
-    request = $.ajax({
-        type: "POST",
-        url: "./php/update_site.php",
-        data: dataString
-    });
+$('.edit_item').on('submit', function(e, id, newNotes, data) {
+
+    e.preventDefault();
+
+    if(data == "Update Notes") {
+
+        var dataString = 'updateNotes=yes&id=' + id + '&notes=' + newNotes;
+        console.log(dataString);
+
+        request = $.ajax({
+            type: "POST",
+            url: "./php/update_site.php",
+            data: dataString
+        });
+
+        request.done(function () {
+
+        });
+
+        request.fail(function (jqXHR, textStatus, errorThrown) {
+
+            alert("it failed!");
+        });
+    }
 });
 
 /*

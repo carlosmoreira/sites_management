@@ -227,6 +227,11 @@ $('.edit_item').on('submit', function(e, id, newNotes, data) {
 
         request.done(function () {
 
+            $('.sites_table tbody').find('.selected').next('.additional_info_row').find('.site_notes')
+                .append('<div class="pull-left notes_success"><span class="text-success fa fa-check-circle"></span></div>');
+
+            $('.notes_success').fadeOut('slow', function() { $(this).remove(); });
+
         });
 
         request.fail(function (jqXHR, textStatus, errorThrown) {

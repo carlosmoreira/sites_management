@@ -35,15 +35,17 @@ while($row = $result->fetch_assoc()){
                         <tr class="hide additional_info_row">
                             <td colspan="3">
                                 <div class="additional_info">
-                                    <div class="col-lg-4 col-md-4>
+                                    <div class="col-lg-4 col-md-4 col-sm-6 details">
                                         <span class="category"><span class="bold">Type :</span> ' . $row['category'] . '</span>
                                         <br>
                                         <span class="site_url"><span class="bold">URL :</span><a href="' . $row['url'] . '" target="_blank"> ' . $row['url'] . '</a></span>
                                         <br>
                                         <span class="dev_url"><span class="bold">Dev URL :</span> </span>
+                                        <hr>
+                                        <div class="vert_line"></div>
                                     </div>
-                                    <div class="col-lg-8 col-md-8">
-                                        <div class="form-group site_notes">
+                                    <div class="col-lg-8 col-md-8 col-sm-6 site_notes">
+                                        <div class="form-group">
                                           <label class="bold" for="textArea" control-label">Notes</label>
                                           <div>
                                             <textarea class="form-control" rows="3">' . $row['notes'] . '</textarea>

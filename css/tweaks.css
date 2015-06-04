@@ -1,15 +1,15 @@
 .additional_info {
 
     display: none;
-    padding-left: 20px;
+
 }
-.additional_info span {
+.additional_info .details span {
 
     line-height: 50px;
 }
 .additional_info_row td{
 
-   box-shadow: 0 0 5px lightgray;
+   box-shadow: 0 0px 10px lightgray;
 }
 .add_item_panel {
 
@@ -68,38 +68,28 @@ body {
     color: inherit;
 }
 
-.edit_cms_form, .edit_site_name_form {
 
-    text-align: left;
+@media (min-width: 768px) {
+
+    .details hr {
+
+        display: none;
+    }
+    .details {
+
+        border-right: 1px solid lightgray;
+    }
 }
-
-.edit_cms_form button{
-
-    margin-right: 10px;
-    margin-top: 10px;
-}
-
-.edit_description_form button {
-
-    margin-right: 10px;
-    margin-top: -5px;
-}
-
 #edit_site_modal {
 
     text-align: left;
-}
-
-.edit_site_name_form button{
-
-   margin-right: 10px;
-   margin-top: -5px;
 }
 
 .edit_success {
 
     margin-bottom: 20px;
 }
+
 .hide {
 
     display:none;
@@ -116,7 +106,9 @@ body {
     letter-spacing: 2px;
     font-weight: 200;
 }
-
+hr {
+    border-color: lightgray;
+}
 .modal-body {
 
     padding-right: 30px;
@@ -124,6 +116,7 @@ body {
 }
 .notes_success {
     margin-left: 10px;
+    margin-top: 0px;
 }
 .outer-table {
 
@@ -136,7 +129,20 @@ body {
     margin-top: 40px;
 
 }
-#site_notes {
+.site_notes {
+
+    margin-top: 10px;
+}
+@media (min-width: 768px) {
+
+    .site_notes {
+
+        margin-top: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+.site_notes textarea {
 
     resize: none;
 }
@@ -155,7 +161,7 @@ body {
     margin-top: 20px;
 
 }
-.sites_table tbody tr {
+.sites_table tbody .primary_info {
 
     cursor: pointer;
 
@@ -226,4 +232,11 @@ body {
 
 .update_notes {
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+.vert_line {
+    width: 5px; /* Line width */
+    background-color: black; /* Line color */
+    height: 500%; /* Override in-line if you want specific height. */
+
 }

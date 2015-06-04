@@ -1,4 +1,4 @@
-<?php
+  <?php
 require_once './php/login.php';
 
 $query="SELECT sites.id, sites.category, sites.description, sites.url, sites.name AS site_name, cms_types.name, cms_types.id AS cms_id

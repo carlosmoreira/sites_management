@@ -1,6 +1,15 @@
-.sites_table .additional_info td{
+.additional_info {
 
-    text-align: center;
+    display: none;
+    padding-left: 20px;
+}
+.additional_info span {
+
+    line-height: 50px;
+}
+.additional_info_row td{
+
+   box-shadow: 0 0 5px lightgray;
 }
 .add_item_panel {
 
@@ -37,6 +46,11 @@ body {
     background-color: #f6f6f6;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 300;
+}
+.bold {
+
+    color: #317eac;
+    font-weight: 500;
 }
 .close_modal {
 
@@ -86,7 +100,10 @@ body {
 
     margin-bottom: 20px;
 }
+.hide {
 
+    display:none;
+}
 .heading {
 
     margin-top: 30px;
@@ -117,6 +134,10 @@ body {
     margin-top: 40px;
 
 }
+#site_notes {
+
+    resize: none;
+}
 .sites_search {
 
     margin-top: 5px;
@@ -137,9 +158,10 @@ body {
     cursor: pointer;
 
 }
-.sites_table tbody tr:hover {
+.sites_table tbody .primary_info:hover {
 
     color: #2fa4e7;
+    background-color: #f5f5f5;
 }
 
 .sites_table th {
@@ -186,8 +208,24 @@ body {
 
     text-align: left;
 }
+.sites_table .additional_info td {
+
+    text-align: center;
+}
 .success {
 
     margin-left: 5px;
 }
+.selected {
 
+    background-color: #f5f5f5;
+    color: #2fa4e7;
+}
+.additional_row_selected td{
+
+    box-shadow: 0 0 10px gray;
+}
+
+.update_notes {
+    margin-top: 10px;
+}

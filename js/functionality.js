@@ -1,7 +1,8 @@
 var descriptionClicked;
 var nameClicked;
 var cmsClicked;
-var cms_list = ['', 'Raw PHP', 'Wordpress', 'Joomla']
+var cms_list = ['', 'Raw PHP', 'Wordpress', 'Joomla'];
+var rowClicked;
 
 
 //Toggle add new site panel
@@ -94,7 +95,7 @@ $('.add_site_form').on('submit', function(e, newName, newDescription, cmsType) {
 
 
 //Active modal on row click
-$('table').on('click', 'tr', function() {
+/*$('table').on('click', 'tr', function() {
 
     //clearModalSuccess();
 
@@ -108,7 +109,7 @@ $('table').on('click', 'tr', function() {
     $('#edit_site_modal').modal();
 
     setModal(id, siteName, description, cms);
-});
+});*/
 
 
 
@@ -157,6 +158,51 @@ $('.edit_site_form').on('submit', function(e, id, newSiteName, newDescription, n
     request.fail(function (jqXHR, textStatus, errorThrown) {
 
         alert("it failed!");
+    });
+});
+
+$('.sites_table').on('click', '.primary_info', function() {
+
+    var $row = $(this).next('.additional_info_row');
+    var id = $(this).find('input[name="id"]').val();
+
+    if(rowClicked != id) closeSelectedRow();
+
+    if($row.hasClass('hide')) {
+
+        $(this).addClass('selected');
+        $row.find('.additional_info').slideDown({duration: 200, progress: $row.removeClass('hide'), ease: 'linear' });
+        rowClicked = id;
+
+    }
+    else {
+
+        $(this).removeClass('selected');
+        $row.find('.additional_info').slideUp(200,"linear",function()
+            {
+                $row.addClass('hide');
+            }
+        );
+
+        rowClicked = '';
+    }
+
+});
+
+
+$('.sites_table tbody').on('click', '.update_notes', function() {
+
+    var id = rowClicked;
+    var notes = $(this).prev('div').find('textarea').text();
+
+    //console.log(id + ' ' + notes);
+
+    var dataString = 'id='+id+'&name='+newSiteName+'&description='+newDescription+'&cms='+newCMS;
+
+    request = $.ajax({
+        type: "POST",
+        url: "./php/update_site.php",
+        data: dataString
     });
 });
 
@@ -434,6 +480,11 @@ function setModal(id, siteName, description, cms) {
     $('#editDescription').val(description);
     $('#selectCMS option[value="'+cms+'"]').attr('selected', true);
 };
+
+function closeSelectedRow() {
+
+    $('.sites_table .selected').trigger('click');
+}
 
 /*function clearModalSuccess() {
 

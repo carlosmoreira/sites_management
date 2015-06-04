@@ -25,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="functionality.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functionality.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/functionality.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1527" max-vertical-offset="6690">
-              <caret line="143" column="10" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.41436464" vertical-offset="1785" max-vertical-offset="7455">
+              <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -38,7 +38,7 @@
       <file leaf-file-name="add_site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/add_site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="570">
+            <state vertical-scroll-proportion="-9.75" vertical-offset="51" max-vertical-offset="570">
               <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding>
                 <marker date="1433265384000" expanded="true" signature="355:466" placeholder="INSERT INTO ..." />
@@ -50,8 +50,8 @@
       <file leaf-file-name="update_site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/update_site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1125">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1125">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <marker date="1433275089000" expanded="true" signature="406:518" placeholder="UPDATE sites..." />
                 <marker date="1433275089000" expanded="true" signature="880:966" placeholder="UPDATE sites..." />
@@ -65,8 +65,8 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="17543" max-vertical-offset="100950">
-              <caret line="1190" column="13" selection-start-line="1190" selection-start-column="9" selection-end-line="1190" selection-end-column="16" />
+            <state vertical-scroll-proportion="-7.4814816" vertical-offset="34538" max-vertical-offset="100950">
+              <caret line="2316" column="1" selection-start-line="2315" selection-start-column="20" selection-end-line="2315" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -75,24 +75,24 @@
       <file leaf-file-name="tweaks.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/tweaks.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2985">
-              <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3540">
+              <caret line="229" column="21" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6046065" vertical-offset="165" max-vertical-offset="3840">
-              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="49" />
+            <state vertical-scroll-proportion="71.875" vertical-offset="2475" max-vertical-offset="4080">
+              <caret line="50" column="80" selection-start-line="50" selection-start-column="80" selection-end-line="50" selection-end-column="92" />
               <folding>
-                <element signature="e#3037#3057#0#HTML" expanded="true" />
-                <element signature="e#3348#3368#0#HTML" expanded="true" />
-                <marker date="1433428262000" expanded="true" signature="47:260" placeholder="SELECT sites..sites..." />
-                <marker date="1433428262000" expanded="true" signature="1597:2284" placeholder="..." />
-                <marker date="1433428262000" expanded="true" signature="1606:2284" placeholder="..." />
+                <element signature="e#4426#4446#0#HTML" expanded="true" />
+                <element signature="e#4737#4757#0#HTML" expanded="true" />
+                <marker date="1433444597000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+                <marker date="1433444597000" expanded="true" signature="2986:3673" placeholder="..." />
+                <marker date="1433444597000" expanded="true" signature="2995:3673" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -106,10 +106,10 @@
         <option value="$PROJECT_DIR$/php/update_description.php" />
         <option value="$PROJECT_DIR$/php/update_item.php" />
         <option value="$PROJECT_DIR$/php/add_site.php" />
+        <option value="$PROJECT_DIR$/css/tweaks.css" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/php/update_site.php" />
         <option value="$PROJECT_DIR$/js/functionality.js" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/css/tweaks.css" />
       </list>
     </option>
   </component>
@@ -256,7 +256,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33099824" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -349,11 +349,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3720">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3037#3057#0#HTML" expanded="true" />
-            <element signature="e#3348#3368#0#HTML" expanded="true" />
-            <marker date="1433428262000" expanded="true" signature="47:260" placeholder="SELECT sites..sites..." />
-            <marker date="1433428262000" expanded="true" signature="1597:2284" placeholder="..." />
-            <marker date="1433428262000" expanded="true" signature="1606:2284" placeholder="..." />
+            <element signature="e#4426#4446#0#HTML" expanded="true" />
+            <element signature="e#4737#4757#0#HTML" expanded="true" />
+            <marker date="1433444597000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <marker date="1433444597000" expanded="true" signature="2986:3673" placeholder="..." />
+            <marker date="1433444597000" expanded="true" signature="2995:3673" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -400,11 +400,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="2640">
           <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
           <folding>
-            <element signature="e#3037#3057#0#HTML" expanded="true" />
-            <element signature="e#3348#3368#0#HTML" expanded="true" />
-            <marker date="1433428262000" expanded="true" signature="47:260" placeholder="SELECT sites..sites..." />
-            <marker date="1433428262000" expanded="true" signature="1597:2284" placeholder="..." />
-            <marker date="1433428262000" expanded="true" signature="1606:2284" placeholder="..." />
+            <element signature="e#4426#4446#0#HTML" expanded="true" />
+            <element signature="e#4737#4757#0#HTML" expanded="true" />
+            <marker date="1433444597000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <marker date="1433444597000" expanded="true" signature="2986:3673" placeholder="..." />
+            <marker date="1433444597000" expanded="true" signature="2995:3673" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -451,11 +451,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="2640">
           <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
           <folding>
-            <element signature="e#3037#3057#0#HTML" expanded="true" />
-            <element signature="e#3348#3368#0#HTML" expanded="true" />
-            <marker date="1433428262000" expanded="true" signature="47:260" placeholder="SELECT sites..sites..." />
-            <marker date="1433428262000" expanded="true" signature="1597:2284" placeholder="..." />
-            <marker date="1433428262000" expanded="true" signature="1606:2284" placeholder="..." />
+            <element signature="e#4426#4446#0#HTML" expanded="true" />
+            <element signature="e#4737#4757#0#HTML" expanded="true" />
+            <marker date="1433444597000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <marker date="1433444597000" expanded="true" signature="2986:3673" placeholder="..." />
+            <marker date="1433444597000" expanded="true" signature="2995:3673" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -494,11 +494,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="2580">
           <caret line="80" column="84" selection-start-line="80" selection-start-column="84" selection-end-line="80" selection-end-column="84" />
           <folding>
-            <element signature="e#3037#3057#0#HTML" expanded="true" />
-            <element signature="e#3348#3368#0#HTML" expanded="true" />
-            <marker date="1433428262000" expanded="true" signature="47:260" placeholder="SELECT sites..sites..." />
-            <marker date="1433428262000" expanded="true" signature="1597:2284" placeholder="..." />
-            <marker date="1433428262000" expanded="true" signature="1606:2284" placeholder="..." />
+            <element signature="e#4426#4446#0#HTML" expanded="true" />
+            <element signature="e#4737#4757#0#HTML" expanded="true" />
+            <marker date="1433444597000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <marker date="1433444597000" expanded="true" signature="2986:3673" placeholder="..." />
+            <marker date="1433444597000" expanded="true" signature="2995:3673" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -524,11 +524,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="718" max-vertical-offset="1620">
           <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
           <folding>
-            <element signature="e#3037#3057#0#HTML" expanded="true" />
-            <element signature="e#3348#3368#0#HTML" expanded="true" />
-            <marker date="1433428262000" expanded="true" signature="47:260" placeholder="SELECT sites..sites..." />
-            <marker date="1433428262000" expanded="true" signature="1597:2284" placeholder="..." />
-            <marker date="1433428262000" expanded="true" signature="1606:2284" placeholder="..." />
+            <element signature="e#4426#4446#0#HTML" expanded="true" />
+            <element signature="e#4737#4757#0#HTML" expanded="true" />
+            <marker date="1433444597000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <marker date="1433444597000" expanded="true" signature="2986:3673" placeholder="..." />
+            <marker date="1433444597000" expanded="true" signature="2995:3673" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -554,11 +554,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="718" max-vertical-offset="1590">
           <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
           <folding>
-            <element signature="e#3037#3057#0#HTML" expanded="true" />
-            <element signature="e#3348#3368#0#HTML" expanded="true" />
-            <marker date="1433428262000" expanded="true" signature="47:260" placeholder="SELECT sites..sites..." />
-            <marker date="1433428262000" expanded="true" signature="1597:2284" placeholder="..." />
-            <marker date="1433428262000" expanded="true" signature="1606:2284" placeholder="..." />
+            <element signature="e#4426#4446#0#HTML" expanded="true" />
+            <element signature="e#4737#4757#0#HTML" expanded="true" />
+            <marker date="1433444597000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <marker date="1433444597000" expanded="true" signature="2986:3673" placeholder="..." />
+            <marker date="1433444597000" expanded="true" signature="2995:3673" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -568,11 +568,11 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#3037#3057#0#HTML" expanded="true" />
-            <element signature="e#3348#3368#0#HTML" expanded="true" />
-            <marker date="1433428262000" expanded="true" signature="47:260" placeholder="SELECT sites..sites..." />
-            <marker date="1433428262000" expanded="true" signature="1597:2284" placeholder="..." />
-            <marker date="1433428262000" expanded="true" signature="1606:2284" placeholder="..." />
+            <element signature="e#4426#4446#0#HTML" expanded="true" />
+            <element signature="e#4737#4757#0#HTML" expanded="true" />
+            <marker date="1433444597000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <marker date="1433444597000" expanded="true" signature="2986:3673" placeholder="..." />
+            <marker date="1433444597000" expanded="true" signature="2995:3673" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -584,22 +584,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/php/update_site.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1125">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <marker date="1433275089000" expanded="true" signature="406:518" placeholder="UPDATE sites..." />
-            <marker date="1433275089000" expanded="true" signature="880:966" placeholder="UPDATE sites..." />
-            <marker date="1433275089000" expanded="true" signature="1294:1364" placeholder="UPDATE sites..." />
-            <marker date="1433275089000" expanded="true" signature="1709:1781" placeholder="UPDATE sites..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/php/add_site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="570">
+        <state vertical-scroll-proportion="-9.75" vertical-offset="51" max-vertical-offset="570">
           <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding>
             <marker date="1433265384000" expanded="true" signature="355:466" placeholder="INSERT INTO ..." />
@@ -609,39 +596,52 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="17543" max-vertical-offset="100950">
-          <caret line="1190" column="13" selection-start-line="1190" selection-start-column="9" selection-end-line="1190" selection-end-column="16" />
+        <state vertical-scroll-proportion="-7.4814816" vertical-offset="34538" max-vertical-offset="100950">
+          <caret line="2316" column="1" selection-start-line="2315" selection-start-column="20" selection-end-line="2315" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/functionality.js">
+    <entry file="file://$PROJECT_DIR$/php/update_site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1932" max-vertical-offset="6690">
-          <caret line="143" column="10" selection-start-line="143" selection-start-column="10" selection-end-line="143" selection-end-column="10" />
-          <folding />
+        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1125">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <marker date="1433275089000" expanded="true" signature="406:518" placeholder="UPDATE sites..." />
+            <marker date="1433275089000" expanded="true" signature="880:966" placeholder="UPDATE sites..." />
+            <marker date="1433275089000" expanded="true" signature="1294:1364" placeholder="UPDATE sites..." />
+            <marker date="1433275089000" expanded="true" signature="1709:1781" placeholder="UPDATE sites..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/tweaks.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2985">
-          <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3540">
+          <caret line="229" column="21" selection-start-line="229" selection-start-column="21" selection-end-line="229" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6046065" vertical-offset="165" max-vertical-offset="3840">
-          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="49" />
+        <state vertical-scroll-proportion="71.875" vertical-offset="2475" max-vertical-offset="4080">
+          <caret line="50" column="80" selection-start-line="50" selection-start-column="80" selection-end-line="50" selection-end-column="92" />
           <folding>
-            <element signature="e#3037#3057#0#HTML" expanded="true" />
-            <element signature="e#3348#3368#0#HTML" expanded="true" />
-            <marker date="1433428262000" expanded="true" signature="47:260" placeholder="SELECT sites..sites..." />
-            <marker date="1433428262000" expanded="true" signature="1597:2284" placeholder="..." />
-            <marker date="1433428262000" expanded="true" signature="1606:2284" placeholder="..." />
+            <element signature="e#4426#4446#0#HTML" expanded="true" />
+            <element signature="e#4737#4757#0#HTML" expanded="true" />
+            <marker date="1433444597000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <marker date="1433444597000" expanded="true" signature="2986:3673" placeholder="..." />
+            <marker date="1433444597000" expanded="true" signature="2995:3673" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functionality.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41436464" vertical-offset="1785" max-vertical-offset="7455">
+          <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

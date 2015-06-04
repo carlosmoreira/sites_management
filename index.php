@@ -1,10 +1,12 @@
 <?php
 require_once './php/login.php';
 
-$query="SELECT sites.id, sites.category, sites.description, sites.url, sites.name AS site_name, cms_types.name, cms_types.id AS cms_id
+$query="SELECT sites.id, sites.category, sites.description, sites.url, sites.notes, sites.name AS site_name, cms_types.name, cms_types.id AS cms_id, categories.name AS category, categories.id AS cats_id
 		FROM sites
 		LEFT JOIN cms_types
 		ON sites.cms=cms_types.id
+        INNER JOIN categories
+        ON sites.category=categories.id
 		ORDER BY sites.id ASC";
 			
 if(!$result = $db->query($query))
@@ -16,28 +18,42 @@ $output = '';
 
 while($row = $result->fetch_assoc()){
   	
-  	$output = $output . ' <tr class="primary_info">
-  	                        <td>
-      						    <span class="site_name">' . $row['site_name'] . '</span>
-      						    <input type="hidden" name="id" value="' . $row['id'] . '">
-      						</td>'
-      					.	'<td>
-      						    <span class="description">' . $row['description'] . '</span>
-      						    <input type="hidden" name="id" value="' . $row['id'] . '">
-      						   </td>'
+  	$output = $output . '<tr class="primary_info">
+                            <td>
+                                <span class="site_name">' . $row['site_name'] . '</span>
+                                <input type="hidden" name="id" value="' . $row['id'] . '">
+                            </td>'
+                        .	'<td>
+                                <span class="description">' . $row['description'] . '</span>
+                                <input type="hidden" name="id" value="' . $row['id'] . '">
+                               </td>'
                         .   '<td>
-      						    <span class="cms">' . $row['name'] . '</span>
-      						    <input type="hidden" name="cmsId" value="' . $row['cms_id'] . '">
+                                <span class="cms">' . $row['name'] . '</span>
+                                <input type="hidden" name="cmsId" value="' . $row['cms_id'] . '">
                             </td>
-    					</tr>
-                        <tr class="additonal_info">
-                            <td colspan="1">
-                                <span class="category"><strong>Type:</strong> ' . $row['category'] . '</span>
+                        </tr>
+                        <tr class="hide additional_info_row">
+                            <td colspan="3">
+                                <div class="additional_info">
+                                    <div class="col-lg-4 col-md-4>
+                                        <span class="category"><span class="bold">Type :</span> ' . $row['category'] . '</span>
+                                        <br>
+                                        <span class="site_url"><span class="bold">URL :</span><a href="' . $row['url'] . '" target="_blank"> ' . $row['url'] . '</a></span>
+                                        <br>
+                                        <span class="dev_url"><span class="bold">Dev URL :</span> </span>
+                                    </div>
+                                    <div class="col-lg-8 col-md-8">
+                                        <div class="form-group">
+                                          <label for="textArea" control-label">Notes</label>
+                                          <div>
+                                            <textarea class="form-control" rows="3" id="site_notes">' . $row['notes'] . '</textarea>
+                                          </div>
+                                          <button class="btn btn-primary btn-sm update_notes" type="button">Update</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
-                            <td colspan="2">
-                                <span class="site_url"><strong>URL:</strong> ' . $row['url'] . '</span>
-                            </td>
-                        </tr> ';
+                        </tr>';
 }
 	
 ?>
@@ -164,7 +180,7 @@ while($row = $result->fetch_assoc()){
                     </div>
 
                     <form class="form edit_item">
-                        <table class="sites_table table table-hover table-striped table-responsive">
+                        <table class="sites_table table table-responsive">
                             <thead>
                                 <tr>
                                     <th class="col-lg-4">Name</th>

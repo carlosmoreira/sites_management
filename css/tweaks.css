@@ -1,0 +1,193 @@
+.sites_table .additional_info td{
+
+    text-align: center;
+}
+.add_item_panel {
+
+    margin-top: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px lightgray;
+    border-radius: 5px;
+}
+
+.add_site{
+
+    height: 1px;
+    background-color: lightgray;
+    text-align: center;
+}
+.add_site span {
+
+
+    position: relative;
+    top: -0.8em;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    font-size: 105%;
+    font-weight: 300;
+    z-index: 999;
+}
+.add_site span:hover {
+
+    background-color: #178acc;
+}
+body {
+
+    background-color: #f6f6f6;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+.close_modal {
+
+    font-size: 70%;
+}
+.close_panel{
+
+    font-size: 65%;
+    cursor: pointer;
+    color: #c4c4c4;
+}
+
+.close_panel:hover {
+
+    color: inherit;
+}
+
+.edit_cms_form, .edit_site_name_form {
+
+    text-align: left;
+}
+
+.edit_cms_form button{
+
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.edit_description_form button {
+
+    margin-right: 10px;
+    margin-top: -5px;
+}
+
+#edit_site_modal {
+
+    text-align: left;
+}
+
+.edit_site_name_form button{
+
+   margin-right: 10px;
+   margin-top: -5px;
+}
+
+.edit_success {
+
+    margin-bottom: 20px;
+}
+
+.heading {
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 3px lightgrey;
+}
+.heading h1 {
+
+    margin-top: 10px;
+    letter-spacing: 2px;
+    font-weight: 200;
+}
+
+.modal-body {
+
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.outer-table {
+
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: 0px 0px 6px lightgrey;
+    margin-bottom: 50px;
+    margin-top: 40px;
+
+}
+.sites_search {
+
+    margin-top: 5px;
+}
+.sites_table {
+
+    text-align: left;
+    background-color: #f4f4f4;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border:none;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+.sites_table tbody tr {
+
+    cursor: pointer;
+
+}
+.sites_table tbody tr:hover {
+
+    color: #2fa4e7;
+}
+
+.sites_table th {
+
+    text-align: center;
+    background-color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 115%;
+    box-shadow: 0px 0px 2px gray;
+    color: #317eac;
+
+}
+
+.sites_table thead th:first-child {
+    border-radius: 5px 0 0 0;
+}
+.sites_table thead th:last-child {
+    border-radius: 0 5px 0 0;
+}
+.sites_table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 5px;
+}
+.sites_table tbody tr:last-child td:last-child {
+    border-radius: 0 0 5px 0;
+}
+
+.sites_table tbody {
+
+    background-color: #ffffff;
+}
+.sites_table .primary_info td {
+
+    font-weight: 200;
+    box-shadow: 0 0 1px gray;
+    font-size: 110%;
+
+}
+.sites_table .primary_info td:last-child{
+
+    text-align: center;
+}
+.sites_table .primary_info td:first-child {
+
+    text-align: left;
+}
+.success {
+
+    margin-left: 5px;
+}
+

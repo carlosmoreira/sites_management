@@ -1,4 +1,3 @@
-test from carlos
 <?php
 require_once './php/login.php';
 

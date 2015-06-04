@@ -16,7 +16,7 @@ $output = '';
 
 while($row = $result->fetch_assoc()){
   	
-  	$output = $output . '<tr class="primary_info">
+  	$output = $output . ' <tr class="primary_info">
   	                        <td>
       						    <span class="site_name">' . $row['site_name'] . '</span>
       						    <input type="hidden" name="id" value="' . $row['id'] . '">

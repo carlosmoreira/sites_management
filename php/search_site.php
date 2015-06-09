@@ -86,7 +86,7 @@ if (isset($_GET['search'])) $search = sanitizeString($_GET['search']);
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <hr>
+                                        <div class="row"><hr></div>
                                         <div class="edit_delete">
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                 <button class="btn btn-block btn-default edit_site_btn" type="button">

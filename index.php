@@ -42,7 +42,7 @@ while($row = $result->fetch_assoc()){
                                         <span class="site_url"><span class="bold">URL : </span><a href="' . $row['url'] . '" target="_blank">' . $row['url'] . '</a></span>
                                         <br>
                                         <span class="dev_url"><span class="bold">Dev URL : </span><a href="' . $row['dev_url'] . '" target="_blank">' . $row['dev_url'] . '</a></span>
-                                        <hr>
+                                        <div class="row"><hr></div>
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-6 site_notes">
                                         <div class="form-group">
@@ -56,7 +56,7 @@ while($row = $result->fetch_assoc()){
                                         </div>
                                     </div>
                                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                        <hr>
+                                        <div class="row"><hr></div>
                                         <div class="edit_delete">
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                                 <button class="btn btn-block btn-default edit_site_btn" type="button">
@@ -221,7 +221,7 @@ while($row = $result->fetch_assoc()){
                 <div class="sites text-center col-lg-12">
 
                     <div class="sites_search">
-                        <form role="search">
+                        <form class="" role="search">
                             <div class="form-group">
                                 <div class="input-group col-lg-4 col-med-4 col-lg-offset-8 col-md-offset-8">
                                     <span class="input-group-addon"><span class="fa fa-search"></span></span>
@@ -244,7 +244,7 @@ while($row = $result->fetch_assoc()){
                                 <?php echo $output; ?>
                             </tbody>
                         </table>
-                    </form
+                    </form>
 
                 </div>
 

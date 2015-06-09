@@ -5,7 +5,7 @@ var cms_list = ['', 'Raw PHP', 'Wordpress', 'Joomla'];
 var type_list = ['', 'Restaurant', 'Legal', 'Services', 'eCommerce', 'Charity', 'Celebrity', 'Real Estate', 'Food', 'Advertising', 'Insurance', 'Beauty', 'Technology'];
 var typeClicked;
 var urlClicked;
-var devUrlclicked;
+var devUrlClicked;
 var rowClicked;
 
 
@@ -112,7 +112,7 @@ $('.add_site_form').on('submit', function(e, newName, newDescription, cmsType, n
                                                    +                '</div>'
                                                    +            '</div>'
                                                    +            '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
-                                                   +                '<hr>'
+                                                   +                '<div class="row"><hr></div>'
                                                    +                '<div class="edit_delete">'
                                                    +                    '<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">'
                                                    +                        '<button class="btn btn-block btn-default edit_site_btn" type="button">'
@@ -348,7 +348,7 @@ $('.sites_table').on('click', '.primary_info', function() {
         cmsClicked = '';
         typeClicked = '';
         urlClicked = '';
-        devUrlclicked = '';
+        devUrlClicked = '';
     }
 
 });

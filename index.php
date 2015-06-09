@@ -122,7 +122,7 @@ while($row = $result->fetch_assoc()){
                 <span class="label label-primary">+ Add New Site</span>
             </div>
             <div style="display:none">
-                <span class="label label-primary">- Add New Site</span>
+                <span class="label label-primary">- Close</span>
             </div>
         </div>
     </div>
@@ -225,7 +225,7 @@ while($row = $result->fetch_assoc()){
                             <div class="form-group">
                                 <div class="input-group col-lg-4 col-med-4 col-lg-offset-8 col-md-offset-8">
                                     <span class="input-group-addon"><span class="fa fa-search"></span></span>
-                                    <input type="text" class="form-control" placeholder="Search">
+                                    <input type="search" class="form-control" placeholder="Search" id="searchSite">
                                 </div>
                             </div>
                         </form>
@@ -298,7 +298,7 @@ while($row = $result->fetch_assoc()){
                                 </div>
                                 <div class="form-group">
                                     <label class="control-label">Type</label>
-                                    <select class="form-control" id="selectType">
+                                    <select class="form-control" id="editSelectType">
                                         <option value="1">Restaurant</option>
                                         <option value="2">Legal</option>
                                         <option value="3">Services</option>

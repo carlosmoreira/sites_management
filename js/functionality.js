@@ -14,9 +14,7 @@ $('.add_site').on('click', function() {
 
     $(this).children('div').toggle();
 
-    $('.add_item_panel').slideToggle();
-
-    removeValidations();
+    $('.add_item_panel').slideToggle( {done: removeValidations()} );
 });
 
 $('.close_panel').click(function(){ $('.add_site').trigger('click'); });
@@ -30,6 +28,9 @@ $('.add_site_button').click(function() {
 
     var siteName = $('#inputSiteName').val();
     var description = $('#inputDescription').val();
+    var url = $('#inputSiteUrl').val();
+    var devUrl = $('#inputDevUrl').val();
+    var type = $('#selectType option:selected').val();
     var cms = $('input[name="optionsRadios"]:checked').val();
 
     //console.log(cms);
@@ -49,16 +50,18 @@ $('.add_site_button').click(function() {
 
     if(siteName && description) {
 
-        $('.add_site_form').trigger('submit', [siteName, description, cms]);
+        $('.add_site_form').trigger('submit', [siteName, description, cms, url, devUrl, type]);
     }
 });
 
-$('.add_site_form').on('submit', function(e, newName, newDescription, cmsType) {
+$('.add_site_form').on('submit', function(e, newName, newDescription, cmsType, newUrl, newDevUrl, newType) {
 
     e.preventDefault();
 
-        var dataString = 'siteName='+newName+'&description=' + newDescription + '&cms=' + cmsType;
+        var dataString = 'siteName='+newName+'&description='+newDescription+'&cms='+cmsType+'&url='+newUrl+'&devUrl='+newDevUrl+'&type='+newType;
         $form = $(this);
+
+        console.log(dataString);
 
         request = $.ajax({
             type: "POST",
@@ -71,7 +74,7 @@ $('.add_site_form').on('submit', function(e, newName, newDescription, cmsType) {
             $form.find('fieldset').append('<span class="text-success add_site_success col-lg-offset-2 col-md-offset-2 col-sm-offset-2">Site added successfully</span>');
             $('.add_site_clear').trigger('click');
 
-            $('.sites_table').find('tbody').append('<tr>'
+            $('.sites_table').find('tbody').append('<tr class="primary_info">'
                                                    +    '<td>'
                                                    +        '<span class="site_name">'+newName+'</span>'
                                                    +        '<input type="hidden" name="id" value="'+data+'">'
@@ -84,7 +87,50 @@ $('.add_site_form').on('submit', function(e, newName, newDescription, cmsType) {
                                                    +        '<span class="cms">'+cms_list[cmsType]+'</span>'
                                                    +        '<input type="hidden" name="cmsId" value="'+cmsType+'">'
                                                    +    '</td>'
-                                                   + '</tr>');
+                                                   + '</tr>'
+                                                   + '<tr class="hide additional_info_row">'
+                                                   +     '<td colspan="3">'
+                                                   +        '<div class="additional_info">'
+                                                   +            '<div class="col-lg-4 col-md-4 col-sm-6 details">'
+                                                   +                '<span class="category"><span class="bold">Type : </span>'+type_list[newType]+'</span>'
+                                                   +                '<input type="hidden" name="typeId" value="'+newType+'"">'
+                                                   +                '<br>'
+                                                   +                '<span class="site_url"><span class="bold">URL : </span><a href="'+newUrl+'" target="_blank">'+newUrl+'</a></span>'
+                                                   +                '<br>'
+                                                   +                '<span class="dev_url"><span class="bold">Dev URL : </span><a href="'+newDevUrl+'" target="_blank">'+newDevUrl+'</a></span>'
+                                                   +                '<hr>'
+                                                   +            '</div>'
+                                                   +            '<div class="col-lg-8 col-md-8 col-sm-6 site_notes">'
+                                                   +                '<div class="form-group">'
+                                                   +                    '<label class="bold" for="textArea" control-label">Notes</label>'
+                                                   +                    '<div>'
+                                                   +                        '<textarea class="form-control" rows="3"></textarea>'
+                                                   +                    '</div>'
+                                                   +                    '<div class="pull-left">'
+                                                   +                        '<button class="btn btn-primary btn-sm update_notes" type="button">Update</button>'
+                                                   +                    '</div>'
+                                                   +                '</div>'
+                                                   +            '</div>'
+                                                   +            '<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">'
+                                                   +                '<hr>'
+                                                   +                '<div class="edit_delete">'
+                                                   +                    '<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">'
+                                                   +                        '<button class="btn btn-block btn-default edit_site_btn" type="button">'
+                                                   +                            '<span class="fa fa-pencil-square-o text-warning"> </span> '
+                                                   +                            '<span class="bold">Edit</span>'
+                                                   +                        '</button>'
+                                                   +                    '</div>'
+                                                   +                    '<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">'
+                                                   +                        '<button class="btn btn-block btn-default delete_site_btn" type="button">'
+                                                   +                            '<span class="fa fa-trash-o text-danger"> </span> '
+                                                   +                            '<span class="bold">Delete</span>'
+                                                   +                        '</button>'
+                                                   +                    '</div>'
+                                                   +                '</div>'
+                                                   +            '</div>'
+                                                   +        '</div>'
+                                                   +     '</td>'
+                                                   +  '</tr>');
 
             console.log(data);
         });
@@ -180,18 +226,37 @@ $('#edit_site_modal').on('click', '.edit_modal_save', function() {
 
     //clearModalSuccess();
 
-    var id = $('#modalId').val();
     var siteName = $('#editSiteName').val();
     var description = $('#editDescription').val();
-    var cms = $('#selectCMS option:selected').val();
-    var type = $('#selectType option:selected').val();
-    var siteUrl = $('#editSiteUrl').val();
-    var devUrl = $('#editSiteDevUrl').val();
+
+    //console.log(cms);
+
+    if(!siteName) {
+
+        $('#editSiteName').closest('.form-group').addClass('has-error');
+        $('#editSiteName').parent().append('<span class="text-danger error">Please enter a name</span>');
+    }
+    if(!description){
+
+        $('#editDescription').closest('.form-group').addClass('has-error')
+        $('#editDescription').parent().append('<span class="text-danger error">Please enter a description</span>');
+    }
+
+    if(siteName && description) {
+
+        var id = $('#modalId').val();
+        var siteName = $('#editSiteName').val();
+        var description = $('#editDescription').val();
+        var cms = $('#selectCMS option:selected').val();
+        var type = $('#editSelectType option:selected').val();
+        var siteUrl = $('#editSiteUrl').val();
+        var devUrl = $('#editSiteDevUrl').val();
 
 
-    console.log(id + ' ' + siteName + ' ' + description + ' ' + cms + ' ' + type);
+        console.log(id + ' ' + siteName + ' ' + description + ' ' + cms + ' ' + type);
 
-    $('.edit_site_form').trigger('submit', [id, siteName, description, cms, type, siteUrl, devUrl, "Update Site"]);
+        $('.edit_site_form').trigger('submit', [id, siteName, description, cms, type, siteUrl, devUrl, "Update Site"]);
+    }
 });
 
 $('.edit_site_form').on('submit', function(e, id, newSiteName, newDescription, newCMS, newType, newSiteUrl, newDevUrl, data) {
@@ -331,6 +396,27 @@ $('.edit_item').on('submit', function(e, id, newNotes, data) {
             alert("it failed!");
         });
     }
+});
+
+$('#searchSite').keyup(function() {
+
+    var dataString = 'search='+$(this).val();
+
+    request = $.ajax({
+        type: "GET",
+        url: "./php/search_site.php",
+        data: dataString
+    });
+
+    request.done(function (data) {
+
+        $('.sites_table tbody').html(data);
+    });
+
+    request.fail(function (jqXHR, textStatus, errorThrown) {
+
+        alert("it failed!");
+    });
 });
 
 /*
@@ -608,7 +694,7 @@ function setModal(id, siteName, description, cms, type, siteUrl, devUrl) {
     $('#editSiteUrl').val(siteUrl);
     $('#editSiteDevUrl').val(devUrl);
     $('#selectCMS option[value="'+cms+'"]').attr('selected', true);
-    $('#selectType option[value="'+type+'"]').attr('selected', true);
+    $('#editSelectType option[value="'+type+'"]').attr('selected', true);
 
     $('#myModalLabel').text(siteName);
 };

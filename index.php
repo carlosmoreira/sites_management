@@ -1,7 +1,7 @@
 <?php
 require_once './php/login.php';
 
-$query="SELECT sites.id, sites.category, sites.description, sites.url, sites.notes, sites.name AS site_name, cms_types.name, cms_types.id AS cms_id, categories.name AS category, categories.id AS cats_id
+$query="SELECT sites.id, sites.category, sites.description, sites.url, sites.dev_url, sites.notes, sites.name AS site_name, cms_types.name, cms_types.id AS cms_id, categories.name AS category, categories.id AS cats_id
 		FROM sites
 		LEFT JOIN cms_types
 		ON sites.cms=cms_types.id
@@ -36,13 +36,13 @@ while($row = $result->fetch_assoc()){
                             <td colspan="3">
                                 <div class="additional_info">
                                     <div class="col-lg-4 col-md-4 col-sm-6 details">
-                                        <span class="category"><span class="bold">Type :</span> ' . $row['category'] . '</span>
+                                        <span class="category"><span class="bold">Type : </span>' . $row['category'] . '</span>
+                                        <input type="hidden" name="typeId" value="' . $row['cats_id'] . '"">
                                         <br>
-                                        <span class="site_url"><span class="bold">URL :</span><a href="' . $row['url'] . '" target="_blank"> ' . $row['url'] . '</a></span>
+                                        <span class="site_url"><span class="bold">URL : </span><a href="' . $row['url'] . '" target="_blank">' . $row['url'] . '</a></span>
                                         <br>
-                                        <span class="dev_url"><span class="bold">Dev URL :</span> </span>
+                                        <span class="dev_url"><span class="bold">Dev URL : </span><a href="' . $row['dev_url'] . '" target="_blank">' . $row['dev_url'] . '</a></span>
                                         <hr>
-                                        <div class="vert_line"></div>
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-6 site_notes">
                                         <div class="form-group">
@@ -53,6 +53,23 @@ while($row = $result->fetch_assoc()){
                                           <div class="pull-left">
                                             <button class="btn btn-primary btn-sm update_notes" type="button">Update</button>
                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <hr>
+                                        <div class="edit_delete">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                <button class="btn btn-block btn-default edit_site_btn" type="button">
+                                                    <span class="fa fa-pencil-square-o text-warning"></span>
+                                                    <span class="bold">Edit</span>
+                                                </button>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                <button class="btn btn-block btn-default delete_site_btn" type="button">
+                                                    <span class="fa fa-trash-o text-danger"></span>
+                                                    <span class="bold">Delete</span>
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -125,6 +142,37 @@ while($row = $result->fetch_assoc()){
                         <label for="inputDescription" class="col-lg-2 col-md-2 col-sm-2 col-xs-12 control-label">Description</label>
                         <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
                             <input type="text" class="form-control" id="inputDescription">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputSiteUrl" class="col-lg-2 col-md-2 col-sm-2 col-xs-12 control-label">URL</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                            <input type="text" class="form-control" id="inputSiteUrl">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputDevUrl" class="col-lg-2 col-md-2 col-sm-2 col-xs-12 control-label">Dev URL</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                            <input type="text" class="form-control" id="inputDevUrl">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="selectType" class="col-lg-2 col-md-2 col-sm-2 col-xs-12 control-label">Type</label>
+                        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+                            <select class="form-control" id="selectType">
+                                <option value="1">Restaurant</option>
+                                <option value="2">Legal</option>
+                                <option value="3">Services</option>
+                                <option value="4">eCommerce</option>
+                                <option value="5">Charity</option>
+                                <option value="6">Celebrity</option>
+                                <option value="7">Real Estate</option>
+                                <option value="8">Food</option>
+                                <option value="9">Advertising</option>
+                                <option value="10">Insurance</option>
+                                <option value="11">Beauty</option>
+                                <option value="12">Technology</option>
+                            </select>
                         </div>
                     </div>
                     <div class="form-group">
@@ -229,12 +277,41 @@ while($row = $result->fetch_assoc()){
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                    <label for="inputSiteUrl" class="control-label">URL</label>
+                                    <div>
+                                        <input type="text" class="form-control" id="editSiteUrl">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputSiteDevUrl" class="control-label">Dev URL</label>
+                                    <div>
+                                        <input type="text" class="form-control" id="editSiteDevUrl">
+                                    </div>
+                                </div>
+                                <div class="form-group">
                                     <label class="control-label">CMS</label>
                                      <select class="form-control" id="selectCMS">
                                          <option value="1">Raw PHP</option>
                                          <option value="2">Wordpress</option>
                                          <option value="3">Joomla</option>
                                      </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label">Type</label>
+                                    <select class="form-control" id="selectType">
+                                        <option value="1">Restaurant</option>
+                                        <option value="2">Legal</option>
+                                        <option value="3">Services</option>
+                                        <option value="4">eCommerce</option>
+                                        <option value="5">Charity</option>
+                                        <option value="6">Celebrity</option>
+                                        <option value="7">Real Estate</option>
+                                        <option value="8">Food</option>
+                                        <option value="9">Advertising</option>
+                                        <option value="10">Insurance</option>
+                                        <option value="11">Beauty</option>
+                                        <option value="12">Technology</option>
+                                    </select>
                                 </div>
                             </fieldset>
                         </form>

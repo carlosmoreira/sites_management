@@ -9,7 +9,7 @@
 }
 .additional_info_row td{
 
-   box-shadow: 0 0px 10px lightgray;
+   box-shadow: 0 0px 8px lightgray;
 }
 .add_item_panel {
 
@@ -75,10 +75,20 @@ body {
 
         display: none;
     }
-    .details {
+}
+.edit_delete {
 
-        border-right: 1px solid lightgray;
-    }
+    margin-top: -10px;
+}
+.edit_delete .btn{
+
+    text-shadow: none;
+    font-weight: 800;
+    border: 1px solid lightgray;
+}
+.edit_delete .btn:hover{
+
+    border: 1px solid #178acc;
 }
 #edit_site_modal {
 
@@ -106,9 +116,7 @@ body {
     letter-spacing: 2px;
     font-weight: 200;
 }
-hr {
-    border-color: lightgray;
-}
+
 .modal-body {
 
     padding-right: 30px;
@@ -138,8 +146,6 @@ hr {
     .site_notes {
 
         margin-top: 5px;
-        padding-left: 30px;
-        padding-right: 30px;
     }
 }
 .site_notes textarea {
@@ -233,10 +239,4 @@ hr {
 .update_notes {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-.vert_line {
-    width: 5px; /* Line width */
-    background-color: black; /* Line color */
-    height: 500%; /* Override in-line if you want specific height. */
-
 }

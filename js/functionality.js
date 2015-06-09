@@ -2,6 +2,10 @@ var descriptionClicked;
 var nameClicked;
 var cmsClicked;
 var cms_list = ['', 'Raw PHP', 'Wordpress', 'Joomla'];
+var type_list = ['', 'Restaurant', 'Legal', 'Services', 'eCommerce', 'Charity', 'Celebrity', 'Real Estate', 'Food', 'Advertising', 'Insurance', 'Beauty', 'Technology'];
+var typeClicked;
+var urlClicked;
+var devUrlclicked;
 var rowClicked;
 
 
@@ -94,22 +98,80 @@ $('.add_site_form').on('submit', function(e, newName, newDescription, cmsType) {
 
 
 
-//Active modal on row click
-/*$('table').on('click', 'tr', function() {
+//Handle deleting row
+$('table').on('click', '.delete_site_btn', function() {
 
     //clearModalSuccess();
 
-    var id = $(this).find('.site_name').siblings('input[name="id"]').val();
-    var siteName = $(this).find('.site_name').text();
-    var description = $(this).find('.description').text();
-    var cms = $(this).find('.cms').siblings('input[name="cmsId"]').val();
+    var id = rowClicked;;
 
     //console.log(id + ' ' + siteName + ' ' + description + ' ' + cms);
 
+    $('.edit_item').trigger('submit', [id, "deleteSite"])
+});
+
+$('.edit_item').on('submit', function(e, id, data) {
+
+    e.preventDefault();
+
+   if(data == "deleteSite") {
+
+       var dataString = 'deleteSite=yes&id=' + id;
+
+       var ok = confirm("Are you sure you want to delete '" + nameClicked.text() + "'");
+
+        if(ok) {
+
+            request = $.ajax({
+                type: "POST",
+                url: "./php/update_site.php",
+                data: dataString
+            });
+
+            request.done(function () {
+
+                //$('#edit_site_modal .modal-body').prepend('<p class=" edit_success"><span class="text-success">Changed Successfully</span></p>');
+
+                $('.sites_table tbody').find('.selected').next('.additional_info_row').remove();
+                $('.sites_table tbody').find('.selected').remove();
+
+                rowClicked = '';
+                nameClicked = '';
+                descriptionClicked = '';
+                cmsClicked = '';
+
+
+            });
+
+            request.fail(function (jqXHR, textStatus, errorThrown) {
+
+                alert("it failed!");
+            });
+        }
+   }
+});
+
+
+
+//Activate modal on edit button click
+$('table').on('click', '.edit_site_btn', function() {
+
+    //clearModalSuccess();
+
+    var id = rowClicked;
+    var siteName = nameClicked.text();
+    var description = descriptionClicked.text();
+    var cms = cmsClicked.val();
+    var type = typeClicked.val();
+    var siteUrl = urlClicked.text();
+    var devUrl = devUrlClicked.text();
+
+    console.log(id + ' ' + siteName + ' ' + description + ' ' + cms + ' ' + type + ' ' + siteUrl + ' ' + devUrl);
+
     $('#edit_site_modal').modal();
 
-    setModal(id, siteName, description, cms);
-});*/
+    setModal(id, siteName, description, cms, type, siteUrl, devUrl);
+});
 
 
 
@@ -122,19 +184,25 @@ $('#edit_site_modal').on('click', '.edit_modal_save', function() {
     var siteName = $('#editSiteName').val();
     var description = $('#editDescription').val();
     var cms = $('#selectCMS option:selected').val();
+    var type = $('#selectType option:selected').val();
+    var siteUrl = $('#editSiteUrl').val();
+    var devUrl = $('#editSiteDevUrl').val();
 
-    //console.log(id + ' ' + siteName + ' ' + description + ' ' + cms);
 
-    $('.edit_site_form').trigger('submit', [id, siteName, description, cms, "Update Site"]);
+    console.log(id + ' ' + siteName + ' ' + description + ' ' + cms + ' ' + type);
+
+    $('.edit_site_form').trigger('submit', [id, siteName, description, cms, type, siteUrl, devUrl, "Update Site"]);
 });
 
-$('.edit_site_form').on('submit', function(e, id, newSiteName, newDescription, newCMS, data) {
+$('.edit_site_form').on('submit', function(e, id, newSiteName, newDescription, newCMS, newType, newSiteUrl, newDevUrl, data) {
 
     e.preventDefault();
 
-    if(data === "Update Site") {
+    if(data == "Update Site") {
 
-       var dataString = 'updateSite=yes&id=' + id + '&name=' + newSiteName + '&description=' + newDescription + '&cms=' + newCMS;
+       var dataString = 'updateSite=yes&id='+id+'&name='+newSiteName+'&description='+newDescription+'&siteUrl='+newSiteUrl+'&devUrl='+newDevUrl+'&cms='+newCMS+'&type='+newType;
+
+        console.log(dataString);
 
        request = $.ajax({
            type: "POST",
@@ -146,12 +214,22 @@ $('.edit_site_form').on('submit', function(e, id, newSiteName, newDescription, n
 
            //$('#edit_site_modal .modal-body').prepend('<p class=" edit_success"><span class="text-success">Changed Successfully</span></p>');
 
-           var $row = $('.sites_table tbody').find('input[name="id"][value="' + id + '"]').closest('tr');
+           var $row = $('.sites_table tbody').find('.selected');
 
            $row.find('.site_name').text(newSiteName);
            $row.find('.description').text(newDescription);
            $row.find('.cms').text(cms_list[newCMS]);
            $row.find('input[name="cmsId"]').val(newCMS);
+
+           $row.next('.additional_info_row').find('.category').html('<span class="bold">Type : </span>' + type_list[newType]);
+
+           var $url = $row.next('.additional_info_row').find('.site_url').find('a');
+           $url.attr('href', newSiteUrl);
+           $url.text(' ' + newSiteUrl);
+
+           var $devUrl = $row.next('.additional_info_row').find('.dev_url').find('a');
+           $devUrl.attr('href', newDevUrl);
+           $devUrl.text(' ' + newDevUrl);
 
            $('#edit_site_modal').modal('hide');
 
@@ -180,6 +258,14 @@ $('.sites_table').on('click', '.primary_info', function() {
         $(this).addClass('selected');
         $row.find('.additional_info').slideDown({duration: 200, progress: $row.removeClass('hide'), ease: 'linear' });
         rowClicked = id;
+        nameClicked = $(this).find('.site_name');
+        descriptionClicked = $(this).find('.description');
+        cmsClicked = $(this).find('input[name="cmsId"]');
+        typeClicked = $(this).next('.additional_info_row').find('input[name="typeId"]');
+        urlClicked = $(this).next('.additional_info_row').find('.site_url').find('a');
+        devUrlClicked = $(this).next('.additional_info_row').find('.dev_url').find('a');
+
+        console.log(rowClicked + ' ' + nameClicked + ' ' + descriptionClicked + ' ' + cmsClicked + ' ' + urlClicked);
 
     }
     else {
@@ -192,6 +278,12 @@ $('.sites_table').on('click', '.primary_info', function() {
         );
 
         rowClicked = '';
+        nameClicked = '';
+        descriptionClicked = '';
+        cmsClicked = '';
+        typeClicked = '';
+        urlClicked = '';
+        devUrlclicked = '';
     }
 
 });
@@ -508,12 +600,17 @@ function removeValidations() {
     $('.add_item_panel').find('.add_site_success').remove();
 };
 
-function setModal(id, siteName, description, cms) {
+function setModal(id, siteName, description, cms, type, siteUrl, devUrl) {
 
     $('#modalId').val(id);
     $('#editSiteName').val(siteName);
     $('#editDescription').val(description);
+    $('#editSiteUrl').val(siteUrl);
+    $('#editSiteDevUrl').val(devUrl);
     $('#selectCMS option[value="'+cms+'"]').attr('selected', true);
+    $('#selectType option[value="'+type+'"]').attr('selected', true);
+
+    $('#myModalLabel').text(siteName);
 };
 
 function closeSelectedRow() {

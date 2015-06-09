@@ -19,17 +19,45 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/index.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state vertical-scroll-proportion="0.8569157" vertical-offset="2101" max-vertical-offset="5295">
+                    <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
+                    <folding>
+                      <element signature="e#6138#6158#0#HTML" expanded="true" />
+                      <element signature="e#6449#6469#0#HTML" expanded="true" />
+                      <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+                      <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+                      <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+                      <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+                      <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="Fierce_Enigma" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="functionality.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="functionality.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/functionality.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3285" max-vertical-offset="7980">
-              <caret line="230" column="121" selection-start-line="230" selection-start-column="25" selection-end-line="230" selection-end-column="121" />
+            <state vertical-scroll-proportion="0.45054945" vertical-offset="8814" max-vertical-offset="9435">
+              <caret line="604" column="26" selection-start-line="604" selection-start-column="26" selection-end-line="604" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -38,26 +66,16 @@
       <file leaf-file-name="update_site.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/update_site.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5" vertical-offset="360" max-vertical-offset="1455">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+            <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="1680">
+              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding>
-                <marker date="1433447354000" expanded="true" signature="470:582" placeholder="UPDATE sites..." />
-                <marker date="1433447354000" expanded="true" signature="941:1007" placeholder="UPDATE sites..." />
-                <marker date="1433447354000" expanded="true" signature="1370:1456" placeholder="UPDATE sites..." />
-                <marker date="1433447354000" expanded="true" signature="1784:1854" placeholder="UPDATE sites..." />
-                <marker date="1433447354000" expanded="true" signature="2199:2271" placeholder="UPDATE sites..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125" vertical-offset="360" max-vertical-offset="4140">
-              <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-              <folding>
-                <marker date="1433457158000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+                <marker date="1433873298000" expanded="true" signature="645:810" placeholder="UPDATE sites..." />
+                <marker date="1433873298000" expanded="true" signature="1073:1119" placeholder="DELETE FROM ..." />
+                <marker date="1433873298000" expanded="true" signature="1084:1119" placeholder="UPDATE sites..." />
+                <marker date="1433873298000" expanded="true" signature="1456:1522" placeholder="UPDATE sites..." />
+                <marker date="1433873298000" expanded="true" signature="1885:1971" placeholder="UPDATE sites..." />
+                <marker date="1433873298000" expanded="true" signature="2299:2369" placeholder="UPDATE sites..." />
+                <marker date="1433873298000" expanded="true" signature="2714:2786" placeholder="UPDATE sites..." />
               </folding>
             </state>
           </provider>
@@ -66,18 +84,18 @@
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.592592" vertical-offset="17033" max-vertical-offset="100950">
-              <caret line="1151" column="31" selection-start-line="1151" selection-start-column="31" selection-end-line="1151" selection-end-column="31" />
+            <state vertical-scroll-proportion="-13.074074" vertical-offset="46087" max-vertical-offset="100950">
+              <caret line="3096" column="27" selection-start-line="3096" selection-start-column="20" selection-end-line="3096" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tweaks.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tweaks.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/tweaks.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41436464" vertical-offset="960" max-vertical-offset="3705">
-              <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+            <state vertical-scroll-proportion="-4.2909093" vertical-offset="889" max-vertical-offset="3720">
+              <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -92,10 +110,10 @@
         <option value="$PROJECT_DIR$/php/update_item.php" />
         <option value="$PROJECT_DIR$/php/update_notes.php" />
         <option value="$PROJECT_DIR$/php/add_site.php" />
+        <option value="$PROJECT_DIR$/css/tweaks.css" />
         <option value="$PROJECT_DIR$/php/update_site.php" />
         <option value="$PROJECT_DIR$/js/functionality.js" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/css/tweaks.css" />
       </list>
     </option>
   </component>
@@ -108,10 +126,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="15" />
-    <option name="y" value="29" />
-    <option name="width" value="1260" />
-    <option name="height" value="663" />
+    <option name="x" value="10" />
+    <option name="y" value="23" />
+    <option name="width" value="1269" />
+    <option name="height" value="666" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -177,6 +195,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -203,9 +222,6 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
@@ -213,6 +229,9 @@
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="1">
@@ -238,7 +257,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="29" width="1260" height="663" extended-state="0" />
+    <frame x="10" y="23" width="1269" height="666" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -248,18 +267,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989547" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924694" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924694" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -279,10 +298,156 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="4380">
+          <caret line="61" column="99" selection-start-line="61" selection-start-column="99" selection-end-line="61" selection-end-column="99" />
+          <folding>
+            <element signature="e#6138#6158#0#HTML" expanded="true" />
+            <element signature="e#6449#6469#0#HTML" expanded="true" />
+            <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+            <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17033" max-vertical-offset="100950">
+          <caret line="1151" column="31" selection-start-line="1151" selection-start-column="31" selection-end-line="1151" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/tweaks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="3645">
+          <caret line="76" column="5" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functionality.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3285" max-vertical-offset="7980">
+          <caret line="230" column="121" selection-start-line="230" selection-start-column="25" selection-end-line="230" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/update_site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1455">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <marker date="1433873298000" expanded="true" signature="645:810" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1073:1119" placeholder="DELETE FROM ..." />
+            <marker date="1433873298000" expanded="true" signature="1084:1119" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1456:1522" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1885:1971" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2299:2369" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2714:2786" placeholder="UPDATE sites..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="4140">
+          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+          <folding>
+            <element signature="e#6138#6158#0#HTML" expanded="true" />
+            <element signature="e#6449#6469#0#HTML" expanded="true" />
+            <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+            <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17033" max-vertical-offset="100950">
+          <caret line="1151" column="31" selection-start-line="1151" selection-start-column="31" selection-end-line="1151" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/tweaks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3675">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/functionality.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3285" max-vertical-offset="7980">
+          <caret line="230" column="121" selection-start-line="230" selection-start-column="25" selection-end-line="230" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/update_site.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1455">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <marker date="1433873298000" expanded="true" signature="645:810" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1073:1119" placeholder="DELETE FROM ..." />
+            <marker date="1433873298000" expanded="true" signature="1084:1119" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1456:1522" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1885:1971" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2299:2369" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2714:2786" placeholder="UPDATE sites..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="4140">
+          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+          <folding>
+            <element signature="e#6138#6158#0#HTML" expanded="true" />
+            <element signature="e#6449#6469#0#HTML" expanded="true" />
+            <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+            <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="17033" max-vertical-offset="100950">
+          <caret line="1151" column="31" selection-start-line="1151" selection-start-column="31" selection-end-line="1151" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/tweaks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3705">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/functionality.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2925" max-vertical-offset="7905">
@@ -296,11 +461,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1455">
           <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding>
-            <marker date="1433447354000" expanded="true" signature="470:582" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="941:1007" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="1370:1456" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="1784:1854" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="2199:2271" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="645:810" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1073:1119" placeholder="DELETE FROM ..." />
+            <marker date="1433873298000" expanded="true" signature="1084:1119" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1456:1522" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1885:1971" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2299:2369" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2714:2786" placeholder="UPDATE sites..." />
           </folding>
         </state>
       </provider>
@@ -310,7 +477,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4110">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1433457158000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <element signature="e#6138#6158#0#HTML" expanded="true" />
+            <element signature="e#6449#6469#0#HTML" expanded="true" />
+            <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+            <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -327,7 +500,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="570">
           <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -336,11 +508,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1125">
           <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
           <folding>
-            <marker date="1433447354000" expanded="true" signature="470:582" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="941:1007" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="1370:1456" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="1784:1854" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="2199:2271" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="645:810" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1073:1119" placeholder="DELETE FROM ..." />
+            <marker date="1433873298000" expanded="true" signature="1084:1119" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1456:1522" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1885:1971" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2299:2369" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2714:2786" placeholder="UPDATE sites..." />
           </folding>
         </state>
       </provider>
@@ -366,7 +540,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3720">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1433457158000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <element signature="e#6138#6158#0#HTML" expanded="true" />
+            <element signature="e#6449#6469#0#HTML" expanded="true" />
+            <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+            <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -384,11 +564,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="615">
           <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
-            <marker date="1433447354000" expanded="true" signature="470:582" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="941:1007" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="1370:1456" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="1784:1854" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="2199:2271" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="645:810" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1073:1119" placeholder="DELETE FROM ..." />
+            <marker date="1433873298000" expanded="true" signature="1084:1119" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1456:1522" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1885:1971" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2299:2369" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2714:2786" placeholder="UPDATE sites..." />
           </folding>
         </state>
       </provider>
@@ -414,7 +596,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="2640">
           <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
           <folding>
-            <marker date="1433457158000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <element signature="e#6138#6158#0#HTML" expanded="true" />
+            <element signature="e#6449#6469#0#HTML" expanded="true" />
+            <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+            <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -432,11 +620,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="73" max-vertical-offset="615">
           <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
-            <marker date="1433447354000" expanded="true" signature="470:582" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="941:1007" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="1370:1456" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="1784:1854" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="2199:2271" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="645:810" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1073:1119" placeholder="DELETE FROM ..." />
+            <marker date="1433873298000" expanded="true" signature="1084:1119" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1456:1522" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1885:1971" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2299:2369" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2714:2786" placeholder="UPDATE sites..." />
           </folding>
         </state>
       </provider>
@@ -462,7 +652,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="2640">
           <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
           <folding>
-            <marker date="1433457158000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <element signature="e#6138#6158#0#HTML" expanded="true" />
+            <element signature="e#6449#6469#0#HTML" expanded="true" />
+            <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+            <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -480,11 +676,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="615">
           <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
-            <marker date="1433447354000" expanded="true" signature="470:582" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="941:1007" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="1370:1456" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="1784:1854" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="2199:2271" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="645:810" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1073:1119" placeholder="DELETE FROM ..." />
+            <marker date="1433873298000" expanded="true" signature="1084:1119" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1456:1522" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1885:1971" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2299:2369" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2714:2786" placeholder="UPDATE sites..." />
           </folding>
         </state>
       </provider>
@@ -502,7 +700,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="900" max-vertical-offset="2580">
           <caret line="80" column="84" selection-start-line="80" selection-start-column="84" selection-end-line="80" selection-end-column="84" />
           <folding>
-            <marker date="1433457158000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <element signature="e#6138#6158#0#HTML" expanded="true" />
+            <element signature="e#6449#6469#0#HTML" expanded="true" />
+            <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+            <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -528,7 +732,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="718" max-vertical-offset="1620">
           <caret line="63" column="30" selection-start-line="63" selection-start-column="30" selection-end-line="63" selection-end-column="30" />
           <folding>
-            <marker date="1433457158000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <element signature="e#6138#6158#0#HTML" expanded="true" />
+            <element signature="e#6449#6469#0#HTML" expanded="true" />
+            <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+            <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -554,7 +764,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="718" max-vertical-offset="1590">
           <caret line="70" column="61" selection-start-line="70" selection-start-column="61" selection-end-line="70" selection-end-column="61" />
           <folding>
-            <marker date="1433457158000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <element signature="e#6138#6158#0#HTML" expanded="true" />
+            <element signature="e#6449#6469#0#HTML" expanded="true" />
+            <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+            <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -564,7 +780,13 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1433457158000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
+            <element signature="e#6138#6158#0#HTML" expanded="true" />
+            <element signature="e#6449#6469#0#HTML" expanded="true" />
+            <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+            <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -580,7 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="360">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="17" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -588,54 +809,61 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.375" vertical-offset="120" max-vertical-offset="570">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.074074" vertical-offset="46087" max-vertical-offset="100950">
+          <caret line="3096" column="27" selection-start-line="3096" selection-start-column="20" selection-end-line="3096" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/tweaks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.2909093" vertical-offset="889" max-vertical-offset="3720">
+          <caret line="75" column="22" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/php/update_site.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5" vertical-offset="360" max-vertical-offset="1455">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+        <state vertical-scroll-proportion="-13.75" vertical-offset="0" max-vertical-offset="1680">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding>
-            <marker date="1433447354000" expanded="true" signature="470:582" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="941:1007" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="1370:1456" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="1784:1854" placeholder="UPDATE sites..." />
-            <marker date="1433447354000" expanded="true" signature="2199:2271" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="645:810" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1073:1119" placeholder="DELETE FROM ..." />
+            <marker date="1433873298000" expanded="true" signature="1084:1119" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1456:1522" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="1885:1971" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2299:2369" placeholder="UPDATE sites..." />
+            <marker date="1433873298000" expanded="true" signature="2714:2786" placeholder="UPDATE sites..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8569157" vertical-offset="2101" max-vertical-offset="5295">
+          <caret line="176" column="26" selection-start-line="176" selection-start-column="26" selection-end-line="176" selection-end-column="26" />
+          <folding>
+            <element signature="e#6138#6158#0#HTML" expanded="true" />
+            <element signature="e#6449#6469#0#HTML" expanded="true" />
+            <marker date="1433874997000" expanded="true" signature="47:413" placeholder="SELECT sites..sites..." />
+            <marker date="1433874997000" expanded="true" signature="2741:2802" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4698:5385" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:4726" placeholder="..." />
+            <marker date="1433874997000" expanded="true" signature="4707:5385" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/functionality.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3285" max-vertical-offset="7980">
-          <caret line="230" column="121" selection-start-line="230" selection-start-column="25" selection-end-line="230" selection-end-column="121" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.592592" vertical-offset="17033" max-vertical-offset="100950">
-          <caret line="1151" column="31" selection-start-line="1151" selection-start-column="31" selection-end-line="1151" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="360" max-vertical-offset="4140">
-          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
-          <folding>
-            <marker date="1433457158000" expanded="true" signature="47:398" placeholder="SELECT sites..sites..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/tweaks.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41436464" vertical-offset="960" max-vertical-offset="3705">
-          <caret line="79" column="41" selection-start-line="79" selection-start-column="41" selection-end-line="79" selection-end-column="41" />
+        <state vertical-scroll-proportion="0.45054945" vertical-offset="8814" max-vertical-offset="9435">
+          <caret line="604" column="26" selection-start-line="604" selection-start-column="26" selection-end-line="604" selection-end-column="26" />
           <folding />
         </state>
       </provider>

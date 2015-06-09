@@ -9,19 +9,34 @@ if(isset($_POST['updateSite'])) {
     if (isset($_POST['name'])) $name = sanitizeString($_POST['name']);
     if (isset($_POST['description'])) $description = sanitizeString($_POST['description']);
     if (isset($_POST['cms'])) $cms = sanitizeString($_POST['cms']);
+    if (isset($_POST['type'])) $type = sanitizeString($_POST['type']);
+    if (isset($_POST['siteUrl'])) $siteUrl = sanitizeString($_POST['siteUrl']);
+    if (isset($_POST['devUrl'])) $devUrl = sanitizeString($_POST['devUrl']);
 
-    if ($id && $name && $description && $cms) {
-
-        $query = "UPDATE sites
-              SET name='$name', description='$description', cms='$cms'
+    $query = "UPDATE sites
+              SET name='$name', description='$description', cms='$cms', category='$type', url='$siteUrl', dev_url='$devUrl'
               WHERE id='$id'";
 
-        if (!$result = $db->query($query)) {
-            die('There was an error running the query [' . $db->error . ']');
-        }
-
-        $db->close();
+    if (!$result = $db->query($query)) {
+        die('There was an error running the query [' . $db->error . ']');
     }
+
+    $db->close();
+}
+
+
+if(isset($_POST['deleteSite'])) {
+
+    if (isset($_POST['id'])) $id = sanitizeString($_POST['id']);
+
+    $query = "DELETE FROM sites
+              WHERE id='$id'";
+
+    if (!$result = $db->query($query)) {
+        die('There was an error running the query [' . $db->error . ']');
+    }
+
+    $db->close();
 }
 
 

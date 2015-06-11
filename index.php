@@ -213,6 +213,8 @@ while($row = $result->fetch_assoc()){
         </div>
     </form>
 
+  </div>
+
     <div class="container">
         <div class="row">
 

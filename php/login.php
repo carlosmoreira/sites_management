@@ -9,7 +9,7 @@ $server_root = dirname($_SERVER['PHP_SELF']);
 $dbhost = "localhost"; // Most likely will not need to be changed
 $dbname = "fierce_enigma"; // needs to be changed to your designated table name
 $dbuser = "root"; // needs to be changed to reflect LAMP server credentials
-$dbpass = ""; // needs to be changed to reflect LAMP server credentials
+$dbpass = "root"; // needs to be changed to reflect LAMP server credentials
 
 $db = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
 

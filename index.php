@@ -1,4 +1,5 @@
 <?php
+
 require_once './php/login.php';
 
 $query="SELECT sites.id, sites.category, sites.description, sites.url, sites.dev_url, sites.notes, sites.name AS site_name, cms_types.name, cms_types.id AS cms_id, categories.name AS category, categories.id AS cats_id
@@ -86,7 +87,7 @@ while($row = $result->fetch_assoc()){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Database Manager</title>
+    <title>Sites Manager</title>
 
     <!-- Bootstrap -->
     <link href="./css/bootstrap.css" rel="stylesheet">
@@ -110,7 +111,7 @@ while($row = $result->fetch_assoc()){
         <div class="heading">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <h1>Database Manager</h1>
+                    <h1>Sites Manager</h1>
                 </div>
             </div>
         </div>
